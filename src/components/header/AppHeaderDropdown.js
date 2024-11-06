@@ -84,7 +84,7 @@ const AppHeaderDropdown = () => {
           </CBadge>
         </CDropdownItem>
         <CDropdownDivider /> */}
-        <CDropdownItem href="/#login">
+        <CDropdownItem href="/#/login">
           <CIcon icon={cilLockLocked} className="me-2" />
           Log out
         </CDropdownItem>
