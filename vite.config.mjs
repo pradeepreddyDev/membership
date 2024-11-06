@@ -5,14 +5,14 @@ import autoprefixer from 'autoprefixer'
 
 export default defineConfig(() => {
   return {
-    base: './',
+    base: '/membership/', // Use the repository name as the base path for GitHub Pages
     build: {
-      outDir: 'build',
+      outDir: 'build', // Ensure it builds to 'build' directory as you specified
     },
     css: {
       postcss: {
         plugins: [
-          autoprefixer({}), // add options if needed
+          autoprefixer({}), // Add options if needed
         ],
       },
       preprocessorOptions: {
@@ -47,7 +47,7 @@ export default defineConfig(() => {
     server: {
       port: 3000,
       proxy: {
-        // https://vitejs.dev/config/server-options.html
+        // Add any required proxy configuration here if needed
       },
     },
   }
